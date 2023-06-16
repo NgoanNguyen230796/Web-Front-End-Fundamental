@@ -1,0 +1,53 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+}
+
+.headerContent{
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 1px 3px -2px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    border-radius: 200px 200px 20px 20px;
+    background: white;
+    margin: 60px auto;   
+    position: relative;
+}
+.header-img{
+    width: 250px;
+    height: 340px;
+    margin: 0px auto;
+    background: url(./Pictures/bg-giaovien.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+
+}
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    bottom: 75px;
+}
+.header-desc{
+    padding-top: 320px;
+    padding-left: 20px;
+}
+
+.header-desc>h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.header-desc>p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}

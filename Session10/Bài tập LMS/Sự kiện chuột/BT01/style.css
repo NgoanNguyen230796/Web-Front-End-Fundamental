@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    margin: 70px auto;
+    text-align: center;
+}
+
+form img {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    object-fit: cover;
+
+}
+
+form p {
+    font-size: 30px;
+    margin: 20px 20px;
+}
+
+input[type="button"] {
+    padding: 20px 20px;
+    color: black;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}

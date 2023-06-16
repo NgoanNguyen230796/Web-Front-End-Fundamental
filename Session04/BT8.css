@@ -1,0 +1,30 @@
+/* Reset CSS*/
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 20px;
+}
+div{
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+p{
+    text-align: center;
+
+}
+p{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.titileRas{
+    color: red;
+}

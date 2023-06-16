@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT1</title>
+    <style>
+       select{
+        width: 171px;;
+       }
+    </style>
+</head>
+
+<body>
+    <h2>Đăng ký mua xe ô tô</h2>
+    <form action="" method="post" name="formDangKyMuaXeOTo">
+        <table>
+            <tr>
+                <td><label for="hoVaTen">Họ và tên:</label></td>
+                <td><input type="text" name="hoVaTen" id="hoVaTen" placeholder="Tên của bạn"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email" placeholder="Email của bạn"></td>
+            </tr>
+            <tr>
+                <td><label for="soDienThoai">Số điện thoại:</label></td>
+                <td><input type="text" name="soDienThoai" id="soDienThoai" placeholder="Số điện thoại của bạn"></td>
+            </tr>
+            <tr>
+                <td><label for="oToMuonMua">Xe ô tô muốn mua:</label></td>
+                <td>
+                    <!-- <select name="xeOToMuonMua">
+                        <option value="Toyota">Toyota</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Mec">Mec</option>
+                    </select>
+                     -->
+                     <input list="oTo" name="oToMuonMua" id="oToMuonMua">
+                     <datalist id="oTo">
+                       <option value="Honda">
+                       <option value="Mec">
+                       <option value="Toyota">
+                       <option value="Luxury">
+                     </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="loiNhan">Lời nhắn:</label></td>
+                <td><textarea name="loiNhan" id="loiNhan" cols="20" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="mauXe">Màu xe:</label></td>
+                <td>
+                    <select name="mauXe">
+                        <option value="do">Đỏ</option>
+                        <option value="xanh">Xanh</option>
+                        <option value="trang">Trắng</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Phương thức thanh toán:</legend>
+                        <input type="radio" name="phuongThucThanhToan" value="theTinDung"><label>Thẻ tín dụng</label><br>
+                        <input type="radio" name="phuongThucThanhToan" value="chuyenKhoanNganHang"><label>Chuyển khoản
+                            ngân hàng</label>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="dieuKhoan">Tôi đồng ý với các điều khoản:</label>
+                    <input type="checkbox" name="dieuKhoan" id="dieuKhoan">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Gửi">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+</body>
+
+</html>

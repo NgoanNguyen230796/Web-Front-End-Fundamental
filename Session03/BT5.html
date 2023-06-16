@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT5</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Quản lý tòa nhà chung cư</h1>
+    </header>
+    <nav>
+        <ul class="out">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Danh sách căn hộ</a></li>
+            <li><a href="#">Số phòng ngủ</a></li>
+            <li><a href="#">Thông tin tòa nhà</a></li>
+        </ul>
+    </nav><br>
+
+
+    <main>
+        <article>
+            <h2>Danh sách căn hộ</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Số căn hộ</th>
+                        <th>Diện tích</th>
+                        <th>Số phòng ngủ</th>
+                        <th>Số phòng tắm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>80m<sup>2</sup></td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>90m<sup>2</sup></td>
+                        <td>3</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>201</td>
+                        <td>70m<sup>2</sup></td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Thêm căn hộ mới</h2>
+            <form action="#" method="post" name="themCanHoMoi">
+                <table>
+
+                    <tr>
+                        <td><label for="soCanHo">Số căn hộ:</label></td>
+                        <td><input type="number" name="soCanHo" id="soCanHo"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dienTich">Diện tích:</label></td>
+                        <td><input type="text" name="dienTich" id="dienTich"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="soPhongNgu">Số phòng ngủ:</label></td>
+                        <td><input type="number" name="soPhongNgu" id="soPhongNgu"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="soPhongTam">Số phòng tắm:</label></td>
+                        <td><input type="text" name="soPhongTam" id="soPhongTam"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Thêm"></td>
+                    </tr>
+                </table>
+
+            </form>
+
+
+        </article>
+        <aside>
+            <h3>Thông tin tòa nhà</h3>
+            <p>Địa chỉ:123 Đường ABC,Quận XYZ,Thành phos ABC</p>
+            <p>Số tầng:10</p>
+            <p>Tổng số căn hộ:50</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&#169; 2023 Quản lý bởi Bùi Văn Vụ</p>
+    </footer>
+</body>
+
+</html>

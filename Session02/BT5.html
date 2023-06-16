@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT5</title>
+</head>
+
+<body>
+    <h2>Bài 1: Tạo một form đưa ra thông tin sản phẩm</h2>
+    <form action="#" method="post" name="formThongTinSanPham">
+        <fieldset>
+            <legend>Thông tin sản phẩm</legend>
+            <label for="tenSanPham">Tên sản phẩm:</label>
+            <input type="text" name="tenSanPham" id="tenSanPham">
+            <label for="soLuong">Số lượng:</label>
+            <input type="number" name="soLuong" id="soLuong">
+        </fieldset>
+        <fieldset>
+            <legend>Thông tin giao hàng</legend>
+            <label for="hoVaTen">Họ và tên:</label>
+            <input type="text" name="hoVaTen" id="hoVaTen">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+            <label for="sdt">Số điện thoai:</label>
+            <input type="text" name="sdt" id="sdt">
+            <label for="diaChi">Địa chỉ:</label>
+            <textarea name="diaChi" id="diaChi" cols="30" rows="3"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Thông tin thanh toán</legend>
+            <label for="phuongThucThanhToan">Phương thức thanh toán:</label>
+            <select name="phuongThucThanhToan" id="phuongThucThanhToan">
+                <option value="cash">Thanh toán khi nhận hàng</option>
+                <option value="ATM">Thẻ tín dụng</option>
+            </select>
+        </fieldset>
+        <input type="submit" value="Đặt hàng">
+    </form>
+    <h2>Bài 2: Kết Hợp 2 thẻ Table và Form để làm trang web quản trị</h2>
+    <h3>Trang web bán hàng</h3>
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <h3>Thông tin sản phẩm</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Mô tả</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+            </tr>
+        </thead>
+
+        <body>
+            <tr>
+                <td>Sản phẩm 1</td>
+                <td>Mô tả sản phẩm 1</td>
+                <td>100.000đ</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Sản phẩm 2</td>
+                <td>Mô tả sản phẩm 2</td>
+                <td>200.000đ</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Sản phẩm 3</td>
+                <td>Mô tả sản phẩm 3</td>
+                <td>300.000đ</td>
+                <td>3</td>
+            </tr>
+        </body>
+        <tfoot></tfoot>
+    </table>
+    <h3>Thông tin người dùng</h3>
+    <form action="#" method="post" name="thongTinNguoiDung">
+        <table>
+            <tr>
+                <td><label for="hoVaTen">Họ và tên:</label></td>
+                <td><input type="text" name="hoVaTen" id="hoVaTen"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="sdt">Số điện thoai:</label></td>
+                <td><input type="text" name="sdt" id="sdt"></td>
+            </tr>
+            <tr>
+                <td><label for="diaChi">Địa chỉ:</label></td>
+                <td><input type="text" name="diaChi" id="diaChi"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Đặt hàng"></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>

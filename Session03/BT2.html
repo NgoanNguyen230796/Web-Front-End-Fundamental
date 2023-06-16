@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT2</title>
+    <style>
+        select{
+            width: 172px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Thống kê ngành Công Nghệ Thông Tin</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Ngành</th>
+                <th>Số lượng sinh viên</th>
+                <th colspan="2">Giới tính</th>
+                <th>Thu nhập trung bình(triệu VNĐ)</th>
+                <th>Độ khó dễ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kỹ thuật phần mềm</td>
+                <td>150</td>
+                <td>Nam:50%</td>
+                <td>Nữ:50%</td>
+                <td>15</td>
+                <td>Dễ</td>
+            </tr>
+            <tr>
+                <td>Hệ thống thông tin</td>
+                <td>100</td>
+                <td>Nam:40%</td>
+                <td>Nữ:60%</td>
+                <td>12</td>
+                <td>Trung bình</td>
+            </tr>
+            <tr>
+                <td>Mạng máy tính</td>
+                <td>80</td>
+                <td>Nam:60%</td>
+                <td>Nữ:40%</td>
+                <td>18</td>
+                <td>Khó</td>
+            </tr>
+            <tr>
+                <td>Trí tuệ nhân tạo</td>
+                <td>70</td>
+                <td>Nam:70%</td>
+                <td>Nữ:30%</td>
+                <td>20</td>
+                <td>Rất khó</td>
+            </tr>
+            <tr>
+                <td>An toàn thông tin</td>
+                <td>50</td>
+                <td>Nam:35%</td>
+                <td>Nữ:65%</td>
+                <td>16</td>
+                <td>Trung bình</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <h2>Đăng ký nguyện vọng chuyên ngành</h2>
+    <form action="" method="post" name="fromDangKyNguyenVong">
+        <table>
+            <tr>
+                <td><label for="hoVaTen">Họ và tên:</label></td>
+                <td>
+                    <input type="text" name="hoVaTen" id="hoVaTen">
+                </td>               
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td>
+                    <input type="email" name="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="gioiTinh">Giới tính:</label></td>
+                <td>
+                   <select name="gioiTinh">
+                    <option value="nam">Nam</option>
+                    <option value="nu">Nữ</option>
+                   </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="nguyenVongDangKy">Nguyện vọng đăng ký:</label></td>
+                <td>
+                   <select name="nguyenVongDangKy">
+                    <option value="kyThuatPhanMem">Kỹ thuật phần mềm</option>
+                    <option value="heThongThongTin">Hệ thống thông tin</option>
+                    <option value="mangMayTinh">Mạng máy tính</option>
+                    <option value="triTueNhanTao">Trí tuệ nhân tạo</option>
+                    <option value="anToanThongTin">An toàn thông tin</option>
+                   </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Đăng ký"></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>

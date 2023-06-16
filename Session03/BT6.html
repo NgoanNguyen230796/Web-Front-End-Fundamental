@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT6</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            padding-right: 10px;
+        }
+        .ngayHetHan{
+           width: 168px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trang web thương mại điện tử</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Giỏ hàng</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav><br>
+    <main>
+        <section>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Ảnh</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Mô tả</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3"><img src="./Anh/Apple.jpg" alt="Apple" width="150" height="100"></td>
+                        <td><a href="#">Sản phẩm 1</a></td>
+                        <td rowspan="3">100,000đ</td>
+                        <td rowspan="3">Mô tả sản phẩm 1</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Size:M</td>
+    
+                    </tr>
+                    <tr>
+                        
+                        <td>Color:N</td>
+    
+                    </tr>
+                    <tr>
+                        <td><img src="./Anh/MayTinh.jpg" alt="MayTinh" width="150" height="100"></td>
+                        <td><a href="#">Sản phẩm 2</a></td>
+                        <td>200,000đ</td>
+                        <td>Mô tả sản phẩm 2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><img src="./Anh/Iphone.jpg" alt="Iphone" width="150" height="100"></td>
+                        <td>Mô tả sản phẩm 2</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Liên hệ</h2>
+            <form action="" method="post" name="lienHe">
+                <table>
+                    <tr>
+                        <td><label for="hoVaTen">Họ và tên:</label></td>
+                        <td>
+                            <input type="text" name="hoVaTen" id="hoVaTen">
+                        </td>               
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td>
+                            <input type="email" name="email" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="noiDung">Nội dung:</label></td>
+                        <td>
+                           <textarea name="noiDung" id="noiDung" rows="3" cols="20"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Gửi"></td>
+                       
+                    </tr>
+
+                </table>
+            </form>
+        </section>
+        <section>
+            <h2>Thanh toán</h2>
+            <form action="" method="post" name="thanhToan">
+                <table>
+                    <tr>
+                        <td><label for="hoVaTen">Họ và tên:</label></td>
+                        <td>
+                            <input type="text" name="hoVaTen" id="hoVaTen">
+                        </td>               
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td>
+                            <input type="email" name="email" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="soThe">Số thẻ:</label></td>
+                        <td>
+                            <input type="text" name="soThe" id="soThe">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="ngayHetHan">Ngày hết hạn:</label></td>
+                        <td>
+                            <input type="date" name="ngayHetHan" id="ngayHetHan" class="ngayHetHan">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Thanh toán"></td>
+                       
+                    </tr>
+
+                </table>
+            </form>
+        </section>
+    </main>
+    <tfoot>
+        <p>&#169; 2023 Trang web thương mại điện tử</p>
+    </tfoot>
+</body>
+</html>

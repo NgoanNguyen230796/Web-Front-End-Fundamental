@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;   
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: 70px auto;
+    padding: 32px 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(18, 78, 106);
+    color: white;
+}
+
+.content-item{
+   flex-basis: 30%;
+}
+p,ul{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+li{
+    margin-left: 40px;
+    margin-bottom: 10px;  
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+/* .content-main{
+    width: 20%;
+}
+.content-right{
+    width: 20%;
+} */
+
+.content-right-intem{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.fa-brands{
+    width: 40px;
+    padding: 10px 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.fa-facebook-f{
+    background-color: aqua;
+}
+.fa-google-plus-g{
+    background-color: rgb(178, 111, 34);
+}
+.fa-linkedin-in{
+    background-color: rgb(10, 116, 116);
+}
+.fa-twitter{
+    background-color: aqua;
+}

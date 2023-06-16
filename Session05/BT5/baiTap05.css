@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    margin: 20px auto;
+    width: 900px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.content>p{
+    padding: 10px 10px;
+}
+.content>p:nth-child(1),
+.content>p:nth-child(4),
+.content>p>button
+{
+    font-size: 20px;
+    color: black;
+}
+.content>p:nth-child(1),
+.content>p:last-child
+{
+    background-color: #DCDCDC;
+}
+.content>p:nth-child(3){
+    font-size: 40px;
+   font-weight: 500;
+  
+}
+
+.content>p>button{
+   width: fit-content;
+   margin-bottom: 20px;
+   padding: 20px 20px;
+   color: white;
+   background-color: #1E90FF;
+   border: none;
+   border-radius: 7px;
+}
+.content>p:last-child
+{
+    font-size: 20px;
+    color: grey;
+}

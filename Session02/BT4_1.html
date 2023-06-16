@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT4_1</title>
+    <style>
+         select {
+            width: 170px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Bài 1:Tạo một form mô tả cảm xúc của bạn về<br> tấm ảnh tâm đắc nhất của mình </h2>
+    <form action="#" method="post" name="formMoTaCamXuc">
+        <table>
+            <tr>
+                <td><label for="hoVaTen">Họ và tên:</label></td>
+                <td><input type="text" name="hoVaTen" id="hoVaTen"></td>
+            </tr>
+            <tr>
+
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="chuDe">Chủ đề:</label></td>
+                <td><input type="text" name="chuDe" id="chuDe"></td>
+            </tr>
+            <tr>
+                <td><label for="fileAnh">Image:</label></td>
+                <td><input type="file" name="fileAnh" id="fileAnh"></td>
+            </tr>
+            <tr>
+                <td><label for="noiDung">Nội dung:</label></td>
+                <td><textarea name="noiDung" id="noiDung" cols="20" rows="5"></textarea></td>
+            </tr>
+            <tr>
+
+                <td colspan="2"><input type="submit" value="Gửi"></td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Bài 2: Tạo một form đăng kí tài khoản với các trường thông tin tài khoản </h2>
+    <h3>Đăng kí tài khoản</h3>
+    <form action="#" method="post" name="formDangKyTaiKhoan">
+        <table>
+            <tr>
+                <td><label for="tenDangNhap">Tên đăng nhập:</label></td>
+                <td><input type="text" name="tenDangNhap" id="tenDangNhap"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Mật khẩu:</label></td>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td><label for="confirmPassword">Xác nhận lại mật khẩu:</label></td>
+                <td><input type="password" name="confirmPassword" id="confirmPassword"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="sex">Giới tính:</label></td>
+                <td>
+                    <input type="radio" name="sex" id="nam" value="nam"><label for="sex">Nam</label>
+                    <input type="radio" name="sex" id="nu" value="nu"><label for="sex">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Đăng ký"></td>
+            </tr>
+        </table>
+    </form>
+    <h2>Bài 3: Tạo một thanh tìm kiếm để tìm kiếm kết quả từ phía google</h2>
+    <form action="https://www.google.com/search?" method="get">
+        <input type="text" name="q">
+        <input type="submit" value="Search">
+    </form>
+
+    <h2>Bài 4: Thực hành với form liên hệ như ở dưới đây</h2>
+    <h3>Liên hệ</h3>
+    <form action="#" method="post" name="formLienHe">
+        <table>
+            <tr>
+                <td><label for="hoVaTen">Họ và tên:</label></td>
+                <td><input type="text" name="hoVaTen" id="hoVaTen"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="sdt">Số điện thoai:</label></td>
+                <td><input type="text" name="sdt" id="sdt"></td>
+            </tr>
+            <tr>
+                <td><label for="chuDe">Chủ đề:</label></td>
+                <td><select name="chuDe" id="chuDe">
+                        <option value="tongquan1">Tổng quan 1</option>
+                        <option value="tongquan2">Tổng quan 2</option>
+                        <option value="tongquan3">Tổng quan 3</option>
+                        <option value="tongquan4">Tổng quan 4</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="noiDung">Nội dung:</label></td>
+                <td><textarea name="noiDung" id="noiDung" cols="20" rows="5"></textarea></td>
+            </tr>
+            <tr>
+
+                <td colspan="2"><input type="checkbox" name="thongTinTuChungToi" id="thongTinTuChungToi"><label
+                        for="thongTinTuChungToi">Nhận thông tin từ chúng tôi</label></td>
+            </tr>
+            <tr>
+
+                <td colspan="2"><input type="submit" value="Gửi"></td>
+            </tr>
+        </table>
+    </form>
+    <h2>Bài 5: Tạo một bảng cơ bản gồm danh sách các nhân viên có Tên, Tuổi, Địa Chỉ, SĐT, Lương</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Tên</th>
+                <th>Tuổi</th>
+                <th>Địa chỉ</th>
+                <th>Số điện</th>
+                <th>Lương</th>
+            </tr>
+        </thead>
+
+        <body>
+            <tr>
+                <td>Nguyễn Văn A</td>
+                <td>30</td>
+                <td>Hà Nội</td>
+                <td>0987654321</td>
+                <td>10 triệu</td>
+            </tr>
+            <tr>
+                <td>Trần Thị B</td>
+                <td>25</td>
+                <td>Hồ Chí Minh</td>
+                <td>0123456789</td>
+                <td>8 triệu</td>
+            </tr>
+            <tr>
+                <td>Phạm Văn C</td>
+                <td>35</td>
+                <td>Đà Nẵng</td>
+                <td>0369123456</td>
+                <td>12 triệu</td>
+            </tr>
+
+        </body>
+    </table>
+    <h2>Bài 6: Tạo bảng hiện thị thông tin cuả các đội bóng đá</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Tên đội</th>
+                <th colspan="2">Sân nhà</th>
+            </tr>
+        </thead>
+
+        <body>
+            <tr>
+                <td></td>
+                <td>Tên sân nhà</td>
+                <td>Sức chứa</td>
+            </tr>
+            <tr>
+                <td>Real Madrid</td>
+                <td>Santiago Bernabéu</td>
+                <td>81,044</td>
+            </tr>
+            <tr>
+                <td>Barcelona</td>
+                <td>Camp Nou</td>
+                <td>99,354</td>
+            </tr>
+            <tr>
+                <td>Manchester United</td>
+                <td>Old Trafford</td>
+                <td>74,879</td>
+            </tr>
+        </body>
+    </table>
+    
+</body>
+
+</html>

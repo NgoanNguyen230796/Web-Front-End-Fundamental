@@ -1,0 +1,45 @@
+/* Reset CSS*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    padding: 10px 40px;
+    font-size: 30px;
+}
+
+h3{
+    padding: 10px 40px;
+    font-size: 20px;
+}
+h2{
+    padding: 10px 40px;
+    font-size: 20px;
+}
+
+iframe{
+    width: 400px;
+    height: 200px;
+    padding: 10px 40px;
+}
+
+ul{
+    list-style-type: disc;
+    padding: 10px 50px;
+}
+ol{
+    list-style-type: 1;
+    padding: 5px 70px;
+}
+
+footer{
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
