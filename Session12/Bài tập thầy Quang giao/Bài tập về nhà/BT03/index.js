@@ -1,0 +1,10 @@
+let styles=["Jazz","Blues"];
+styles.push("Rock-n-Roll");
+console.log("Mảng sau khi thêm phần tử Rock-n-Roll vào cuối mảng là:",styles);
+let elemenItem=Math.floor((styles.length-1)/2);
+styles[elemenItem]="Classics";
+console.log("Thay thế phần tử nằm chính giữa mảng bằng “Classics” nếu mảng có tổng số phần tử là lẻ là:",styles);
+styles.shift();
+console.log("Mảng sau khi xóa phần tử đầu tiên của mảng là:",styles);
+styles.unshift("Rap","Reggae");
+console.log("Mảng sau khi thêm phần tử Rap và Reggae vào đầu mảng là:",styles);
