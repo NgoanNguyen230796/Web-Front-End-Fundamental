@@ -106,6 +106,7 @@ function setError(input, message) {
   var parent = input.parentElement;
   var error = parent.querySelector("div .error");
   parent.classList.add("error");
+  parent.classList.remove("success");
   error.innerText = message;
 }
 function setSuccess(input) {
@@ -122,56 +123,49 @@ function validateForm() {
   let studentPhoneValue = document.getElementById("studentPhone").value.trim();
   let studentAddressValue = document.getElementById("studentAddress").value.trim();
   let studentSexValue = document.querySelector("input[name='studentSex']:checked").value.trim();
-  if(studentIDValue === "" && studentNameValue === ""&& studentEmailValue === "" && studentPhoneValue === "" && studentAddressValue===""){
-    let errorShow=document.querySelectorAll("div .error");
-    for (let i = 0; i < errorShow.length; i++) {
-        errorShow[i].innerText="*Không được để trống";
-    }
-    return false;
-  }
   if (studentIDValue === "") {
     setError(studentID, "*Không được để trống MSV");
-    return false;
   } else {
     setSuccess(studentID);
   }
   if (studentNameValue === "") {
     setError(studentName, "*Không được để trống tên học viên");
-    return false;
   } else {
     setSuccess(studentName);
   }
   let validationEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (studentEmailValue === "") {
     setError(studentEmail, "*Không được để trống email");
-    return false;
   } else if (!studentEmailValue.match(validationEmail)) {
     setError(studentEmail, "*Email không hợp lệ");
-    return false;
   } else {
     setSuccess(studentEmail);
   }
   let phonePattern = /(84|0[3|5|7|8|9])+([0-9]{8})\b/g;
   if (studentPhoneValue === "") {
     setError(studentPhone, "*Không được để trống số điện thoại");
-    return false;
   } else if(isNaN(studentPhoneValue)){
     setError(studentPhone, "*Yêu cầu số điện thoại phải là số");
-    return false;
   }else if (!studentPhoneValue.match(phonePattern)) {
     setError(studentPhone, "*Số điện thoại không hợp lệ");
-    return false;
   } else {
     setSuccess(studentPhone);
   }
   if (studentAddressValue === "") {
     setError(studentAddress, "*Không được để trống địa chỉ");
-    return false;
   } else {
     setSuccess(studentAddress);
   }
-  return true;
-  
+  if (
+    studentIDValue &&
+    studentNameValue &&
+    studentEmailValue &&
+    studentPhoneValue &&
+    studentAddressValue
+  ) {
+    return true;
+  }
+  return false;
 }
 
 //Hàm thực hiện thêm mới hoặc cập nhật sinh viên

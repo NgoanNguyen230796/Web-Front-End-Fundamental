@@ -100,7 +100,7 @@
 
 .input-control.error input {
     border-color: #ff3860;
-    
+    margin-bottom: 5px;
 }
 
 .input-control .error {
