@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="divForm">
+            <h2>Thông tin học viên</h2>
+            <form action="#" id="form">
+                <div class="input-control">
+                    <label for="studentID">MSV</label>
+                    <input type="text" name="studentID" id="studentID" placeholder="Vui lòng nhập mã sinh viên">
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="studentName">Họ và tên</label>
+                    <input type="text" name="studentName" id="studentName" placeholder="Vui lòng nhập tên sinh viên">
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="studentEmail">Email</label>
+                    <input type="text" name="studentEmail" id="studentEmail" placeholder="Vui lòng nhập email">
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="studentPhone">Số điện thoại</label>
+                    <input type="text" name="studentPhone" id="studentPhone" placeholder="Vui lòng nhập số điện thoại">
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="studentAddress">Quê quán</label>
+                    <input type="text" name="studentAddress" id="studentAddress" placeholder="Vui lòng nhập địa chỉ">
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="input-sex">
+                    <label for="studentSex">Giới tính</label>
+                    <input type="radio" name="studentSex" id="Nam" value="Nam" checked>
+                    <label for="Nam">Nam</label>
+                    <input type="radio" name="studentSex" id="Nu" value="Nữ">
+                    <label for="Nu">Nữ</label>
+                </div>
+
+                <div class="input-control">
+                    <input type="submit" value="Lưu lại" id="btnSubmit">
+                </div>
+            </form>
+        </div>
+        <div class="divTable">
+            <h2>Thông tin học viên</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td>STT</td>
+                        <td>MSV</td>
+                        <td>Họ tên</td>
+                        <td>Email</td>
+                        <td>Điện thoại</td>
+                        <td>Địa chỉ</td>
+                        <td>Giới tính</td>
+                        <td>Thao tác</td>
+                        <td>Sắp xếp</td>
+                    </tr>
+                </thead>
+                <tbody id="content">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
